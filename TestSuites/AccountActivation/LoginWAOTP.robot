@@ -13,6 +13,9 @@ Perform Login Account
     Input Password User
     Input PIN
     Verify OTP
+Verify Home Page
+    Verify Pop up Trading Mode
+    Verify App Tour: Home Page
     Verify Bottom Sheet Biometric: Skip
 
 
