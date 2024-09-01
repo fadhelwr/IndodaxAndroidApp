@@ -5,17 +5,21 @@ Resource    LoginLocator.robot
 
 *** Keywords ***
 Login Application
+    Capture Page Screenshot
     Click Text          ${LOGIN-BUTTON-TEXT}
     Sleep    1s
 Input Email User
+    Capture Page Screenshot
     Input Text          ${LOGIN-EMAIL-FIELD}       ${ACCOUNT-EMAIL-1}
     Sleep    1s
 Input Password User
+    Capture Page Screenshot
     Input Password      ${LOGIN-PASSWORD-FIELD}    ${ACCOUNT-PASS-1}
     Sleep    1s
     Click Element       ${LOGIN-BUTTON}
 #Change This
 Input PIN
+    Capture Page Screenshot
     Click Text    ${PIN-5}
     Sleep    1s
     Click Text    ${PIN-4}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-01T20:04:19.097255" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-01T20:52:00.034804" rpa="false" schemaversion="5">
 <suite id="s1" name="[EX-001]VerifyHomepage" source="D:\QA\Automation\IndodaxAndroidApp\TestPlan\Exchange\[EX-001]VerifyHomepage.robot">
-<test id="s1-t1" name="Run [EX-001] Verify Home Page" line="6">
+<test id="s1-t1" name="Run Login Test Case" line="6">
 <kw name="Run Process" owner="Process">
-<msg time="2024-09-01T20:04:19.155988" level="TRACE">Arguments: [ 'robot' | '../../TestSuites/AccountActivation/LoginPIN.robot' ]</msg>
-<msg time="2024-09-01T20:04:19.157022" level="INFO">Starting process:
-robot ../../TestSuites/AccountActivation/LoginPIN.robot</msg>
-<msg time="2024-09-01T20:04:19.157022" level="DEBUG">Process configuration:
+<msg time="2024-09-01T20:52:00.364786" level="TRACE">Arguments: [ 'robot' | '-d Output ../../TestSuites/AccountActivation/LoginGoogleAuth.robot --test' ]</msg>
+<msg time="2024-09-01T20:52:00.364786" level="INFO">Starting process:
+robot "-d Output ../../TestSuites/AccountActivation/LoginGoogleAuth.robot --test"</msg>
+<msg time="2024-09-01T20:52:00.364786" level="DEBUG">Process configuration:
 cwd:     D:\QA\Automation\IndodaxAndroidApp
 shell:   False
 stdout:  PIPE
@@ -14,47 +14,51 @@ stderr:  PIPE
 stdin:   None
 alias:   None
 env:     None</msg>
-<msg time="2024-09-01T20:04:19.169426" level="INFO">Waiting for process to complete.</msg>
-<msg time="2024-09-01T20:04:19.584136" level="INFO">Process completed.</msg>
-<msg time="2024-09-01T20:04:19.584136" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x0000021B5A7A9250&gt;</msg>
+<msg time="2024-09-01T20:52:00.379311" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-01T20:52:00.897330" level="INFO">Process completed.</msg>
+<msg time="2024-09-01T20:52:00.897330" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x000001C76020BB10&gt;</msg>
 <arg>robot</arg>
-<arg>../../TestSuites/AccountActivation/LoginPIN.robot</arg>
+<arg>-d Output ../../TestSuites/AccountActivation/LoginGoogleAuth.robot --test</arg>
 <doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2024-09-01T20:04:19.155988" elapsed="0.428148"/>
+<status status="PASS" start="2024-09-01T20:52:00.364786" elapsed="0.532544"/>
 </kw>
-<kw name="Run Process" owner="Process">
-<msg time="2024-09-01T20:04:19.584720" level="TRACE">Arguments: [ 'robot' | '../../TestSuites/Exchange/VerifyHomePageLite.robot' ]</msg>
-<msg time="2024-09-01T20:04:19.584720" level="INFO">Starting process:
-robot ../../TestSuites/Exchange/VerifyHomePageLite.robot</msg>
-<msg time="2024-09-01T20:04:19.584720" level="DEBUG">Process configuration:
-cwd:     D:\QA\Automation\IndodaxAndroidApp
-shell:   False
-stdout:  PIPE
-stderr:  PIPE
-stdin:   None
-alias:   None
-env:     None</msg>
-<msg time="2024-09-01T20:04:19.590247" level="INFO">Waiting for process to complete.</msg>
-<msg time="2024-09-01T20:04:20.050724" level="INFO">Process completed.</msg>
-<msg time="2024-09-01T20:04:20.050724" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x0000021B5AAAA090&gt;</msg>
-<arg>robot</arg>
-<arg>../../TestSuites/Exchange/VerifyHomePageLite.robot</arg>
-<doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2024-09-01T20:04:19.584720" elapsed="0.466004"/>
-</kw>
-<doc>This test suite runs multiple test files</doc>
-<status status="PASS" start="2024-09-01T20:04:19.154955" elapsed="0.895769"/>
+<doc>Runs the Login Valid User test case from login_tests.robot</doc>
+<status status="PASS" start="2024-09-01T20:52:00.364786" elapsed="0.532544"/>
 </test>
-<status status="PASS" start="2024-09-01T20:04:19.099973" elapsed="0.956417"/>
+<test id="s1-t2" name="Run Verify Home Page" line="9">
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-01T20:52:00.897330" level="TRACE">Arguments: [ 'robot' | '-d Output ../../TestSuites/Exchange/VerifyHomepageLite.robot' ]</msg>
+<msg time="2024-09-01T20:52:00.897330" level="INFO">Starting process:
+robot "-d Output ../../TestSuites/Exchange/VerifyHomepageLite.robot"</msg>
+<msg time="2024-09-01T20:52:00.897330" level="DEBUG">Process configuration:
+cwd:     D:\QA\Automation\IndodaxAndroidApp
+shell:   False
+stdout:  PIPE
+stderr:  PIPE
+stdin:   None
+alias:   None
+env:     None</msg>
+<msg time="2024-09-01T20:52:00.912951" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-01T20:52:01.389570" level="INFO">Process completed.</msg>
+<msg time="2024-09-01T20:52:01.389570" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x000001C760FC45D0&gt;</msg>
+<arg>robot</arg>
+<arg>-d Output ../../TestSuites/Exchange/VerifyHomepageLite.robot</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-01T20:52:00.897330" elapsed="0.492240"/>
+</kw>
+<doc>Runs the Login Valid User test case from login_tests.robot</doc>
+<status status="PASS" start="2024-09-01T20:52:00.897330" elapsed="0.492240"/>
+</test>
+<status status="PASS" start="2024-09-01T20:52:00.034804" elapsed="1.370412"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="[EX-001]VerifyHomepage">[EX-001]VerifyHomepage</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="[EX-001]VerifyHomepage">[EX-001]VerifyHomepage</stat>
 </suite>
 </statistics>
 <errors>

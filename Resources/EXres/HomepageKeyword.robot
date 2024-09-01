@@ -9,22 +9,16 @@ Verify <AppBar> LAYOUT LITE
     Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${BT-SEARCH-HOME-LITE}
-    Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${BT-NOTIF-ICON-LITE}
-    Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${BT-PROFILE-ICON-LITE}
-    Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${LABEL-EST-ASSET-LITE}
-    Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${TOOLTIP-EST-ASSET-LITE}
-    Capture Page Screenshot
     Sleep    1s
     Element Should Be Visible    ${EST-ASSET-NOMINAL-ICON-EYE-LITE}
-    Capture Page Screenshot
     Sleep    1s
     
 Verify Bottom Sheet Estimated Asset Value

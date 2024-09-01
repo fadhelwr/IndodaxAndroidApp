@@ -1,12 +1,13 @@
 *** Settings ***
-Library          OperatingSystem
-Library    Process
+Library          AppiumLibrary
+Library          Process
 
 *** Test Cases ***
-Run [EX-001] Verify Home Page
-    [Documentation]    This test suite runs multiple test files
-    Run Process        robot    ../../TestSuites/AccountActivation/LoginPIN.robot
-    Run Process       robot    ../../TestSuites/Exchange/VerifyHomePageLite.robot
+Run Login Test Case
+    Run Process    robot    -d Output ../../TestSuites/AccountActivation/LoginGoogleAuth.robot --test
+Run Verify Home Page
+    Run Process    robot    -d Output ../../TestSuites/Exchange/VerifyHomepageLite.robot
+
 
 
 
