@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-01T12:06:59.275373" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginWAOTP" source="D:\QA\Automation\IndodaxAndroidApp\TestSuites\LoginWAOTP.robot">
+<test id="s1-t1" name="User should be able to open Indodax Application" line="7">
+<kw name="Open Indodax Application" owner="OpenApplication">
+<msg time="2024-09-01T12:06:59.529464" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2024-09-01T12:06:59.529464" level="TRACE">Arguments: [ 'http://192.168.18.43:4723' | platformName='Android' | platformVersion='12' | appPackage='id.co.bitcoin' | deviceName='GIPF69DMZLTK7PFA' | appActivity='id.co.bitcoin.ui.main.SplashScreenActivity' | automationName='UIAutomator2' ]</msg>
+<msg time="2024-09-01T12:06:59.529464" level="DEBUG">POST http://192.168.18.43:4723/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:platformVersion": "12", "appium:appPackage": "id.co.bitcoin", "appium:deviceName": "GIPF69DMZLTK7PFA", "appium:appActivity": "id.co.bitcoin.ui.main.SplashScreenActivity", "appium:automationName": "UIAutomator2"}}}</msg>
+<msg time="2024-09-01T12:06:59.545108" level="DEBUG">Starting new HTTP connection (1): 192.168.18.43:4723</msg>
+<msg time="2024-09-01T12:07:05.927338" level="DEBUG">http://192.168.18.43:4723 "POST /session HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:05.927338" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platformName":"Android","platformVersion":"12","appPackage":"id.co.bitcoin","deviceName":"GIPF69DMZLTK7PFA","appActivity":"id.co.bitcoin.ui.main.SplashScreenActivity","automationName":"UIAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","platformVersion":"12","appPackage":"id.co.bitcoin","deviceName":"GIPF69DMZLTK7PFA","appActivity":"id.co.bitcoin.ui.main.SplashScreenActivity","automationName":"UIAutomator2"},"deviceUDID":"GIPF69DMZLTK7PFA","pixelRatio":"2.75","statBarHeight":93,"viewportRect":{"left":0,"top":93,"width":1080,"height":2307},"deviceApiLevel":31,"deviceManufacturer":"Xiaomi","deviceModel":"2201117PG","deviceScreenSize":"1080x2400","deviceScreenDensity":440},"sessionId":"5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '951', 'ETag': 'W/"3b7-PFOcgI1X35+Kysi9CY535SYVfPY"', 'Date': 'Sun, 01 Sep 2024 05:07:05 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:05.927338" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:05.927338" level="DEBUG">Opened application with session id 5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f</msg>
+<msg time="2024-09-01T12:07:05.927338" level="TRACE">Return: 1</msg>
+<arg>http://192.168.18.43:4723</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>appPackage=${ANDROID_APP_PACKAGE}</arg>
+<arg>deviceName=${ANDROID_DEVICE_NAME}</arg>
+<arg>appActivity=${ANDROID_APP_ACTIVITY}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-09-01T12:06:59.529464" elapsed="6.397874"/>
+</kw>
+<msg time="2024-09-01T12:07:05.927338" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-09-01T12:06:59.529464" elapsed="6.397874"/>
+</kw>
+<status status="PASS" start="2024-09-01T12:06:59.529464" elapsed="6.397874"/>
+</test>
+<test id="s1-t2" name="User could be access Login Page" line="9">
+<kw name="Login Application" owner="LoginRes">
+<msg time="2024-09-01T12:07:05.927338" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:05.927338" level="TRACE">Arguments: [ 'Login' ]</msg>
+<msg time="2024-09-01T12:07:05.927338" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"Login\")]"}</msg>
+<msg time="2024-09-01T12:07:07.697626" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:07.697626" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0183-ffff-ffff00000024","ELEMENT":"00000000-0000-0183-ffff-ffff00000024"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-eeh3S/S4GUfBfsJxTdzsSLCdtuw"', 'Date': 'Sun, 01 Sep 2024 05:07:07 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:07.697626" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:07.697626" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0183-ffff-ffff00000024/click {}</msg>
+<msg time="2024-09-01T12:07:07.760540" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0183-ffff-ffff00000024/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:07.760540" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:07 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:07.760540" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:07.760540" level="INFO">xpath criteria: //*[contains(@text,"Login")]</msg>
+<msg time="2024-09-01T12:07:07.760540" level="TRACE">Return: None</msg>
+<arg>${LOGIN-BUTTON-TEXT}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:05.927338" elapsed="1.833202"/>
+</kw>
+<msg time="2024-09-01T12:07:07.760540" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-09-01T12:07:05.927338" elapsed="1.833202"/>
+</kw>
+<kw name="Input Email User" owner="LoginRes">
+<msg time="2024-09-01T12:07:07.760540" level="TRACE">Arguments: [  ]</msg>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:07.760540" level="TRACE">Arguments: [ 'id.co.bitcoin:id/actEmail' | 'fadhel.rakhman@yahoo.co.id' ]</msg>
+<msg time="2024-09-01T12:07:07.760540" level="INFO">Typing text 'fadhel.rakhman@yahoo.co.id' into text field 'id.co.bitcoin:id/actEmail'</msg>
+<msg time="2024-09-01T12:07:07.760540" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "id", "value": "id.co.bitcoin:id/actEmail"}</msg>
+<msg time="2024-09-01T12:07:08.497164" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:08.497164" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0184-ffff-ffff0000004e","ELEMENT":"00000000-0000-0184-ffff-ffff0000004e"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-2FuPdmNkpkR9vDsTdpB7Xhl38b0"', 'Date': 'Sun, 01 Sep 2024 05:07:08 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:08.497164" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:08.497164" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff0000004e/value {"text": "fadhel.rakhman@yahoo.co.id", "value": ["f", "a", "d", "h", "e", "l", ".", "r", "a", "k", "h", "m", "a", "n", "@", "y", "a", "h", "o", "o", ".", "c", "o", ".", "i", "d"]}</msg>
+<msg time="2024-09-01T12:07:08.997350" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff0000004e/value HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:08.997350" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:09 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:08.997350" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:08.997350" level="INFO">criteria is id.co.bitcoin:id/actEmail</msg>
+<msg time="2024-09-01T12:07:08.997350" level="TRACE">Return: None</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>${ACCOUNT-EMAIL-1}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-09-01T12:07:07.760540" elapsed="1.236810"/>
+</kw>
+<msg time="2024-09-01T12:07:08.997350" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-09-01T12:07:07.760540" elapsed="1.236810"/>
+</kw>
+<kw name="Input Password User" owner="LoginRes">
+<msg time="2024-09-01T12:07:08.997350" level="TRACE">Arguments: [  ]</msg>
+<kw name="Input Password" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:09.012963" level="TRACE">Arguments: [ 'id.co.bitcoin:id/etPassWithLabel' | 'Baracus456' ]</msg>
+<msg time="2024-09-01T12:07:09.012963" level="INFO">Typing password into text field 'id.co.bitcoin:id/etPassWithLabel'</msg>
+<msg time="2024-09-01T12:07:09.012963" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "id", "value": "id.co.bitcoin:id/etPassWithLabel"}</msg>
+<msg time="2024-09-01T12:07:09.749682" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:09.749682" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0184-ffff-ffff00000057","ELEMENT":"00000000-0000-0184-ffff-ffff00000057"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-VzST71giYZw34PfVLVNc0Pp4pA8"', 'Date': 'Sun, 01 Sep 2024 05:07:09 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:09.749682" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:09.749682" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff00000057/value {"text": "Baracus456", "value": ["B", "a", "r", "a", "c", "u", "s", "4", "5", "6"]}</msg>
+<msg time="2024-09-01T12:07:09.843584" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff00000057/value HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:09.843584" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:09 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:09.843584" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:09.843584" level="INFO">criteria is id.co.bitcoin:id/etPassWithLabel</msg>
+<msg time="2024-09-01T12:07:09.843584" level="TRACE">Return: None</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>${ACCOUNT-PASS-1}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-09-01T12:07:08.997350" elapsed="0.846234"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:09.843584" level="TRACE">Arguments: [ 'id.co.bitcoin.auth:id/btLogin' ]</msg>
+<msg time="2024-09-01T12:07:09.843584" level="INFO">Clicking element 'id.co.bitcoin.auth:id/btLogin'.</msg>
+<msg time="2024-09-01T12:07:09.843584" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "id", "value": "id.co.bitcoin.auth:id/btLogin"}</msg>
+<msg time="2024-09-01T12:07:10.569039" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:10.569039" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0184-ffff-ffff0000007e","ELEMENT":"00000000-0000-0184-ffff-ffff0000007e"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-Zg3cG10m3y4eRNV/5ghjqfLd7Xs"', 'Date': 'Sun, 01 Sep 2024 05:07:10 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:10.569039" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:10.569039" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff0000007e/click {}</msg>
+<msg time="2024-09-01T12:07:10.649168" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0184-ffff-ffff0000007e/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:10.649168" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:10 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:10.649168" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:10.649168" level="INFO">criteria is id.co.bitcoin.auth:id/btLogin</msg>
+<msg time="2024-09-01T12:07:10.649168" level="TRACE">Return: None</msg>
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-09-01T12:07:09.843584" elapsed="0.805584"/>
+</kw>
+<msg time="2024-09-01T12:07:10.649168" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-09-01T12:07:08.997350" elapsed="1.651818"/>
+</kw>
+<kw name="Input PIN" owner="LoginRes">
+<msg time="2024-09-01T12:07:10.649168" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:10.649168" level="TRACE">Arguments: [ '5' ]</msg>
+<msg time="2024-09-01T12:07:10.649168" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"5\")]"}</msg>
+<msg time="2024-09-01T12:07:14.868210" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:14.868210" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000b4","ELEMENT":"00000000-0000-0186-ffff-ffff000000b4"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-iR/DpUQCTMEa5z1/hQIqGpa3msQ"', 'Date': 'Sun, 01 Sep 2024 05:07:14 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:14.868210" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:14.868210" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b4/click {}</msg>
+<msg time="2024-09-01T12:07:15.827335" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b4/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:15.827335" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:15 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:15.827335" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:15.827335" level="INFO">xpath criteria: //*[contains(@text,"5")]</msg>
+<msg time="2024-09-01T12:07:15.827335" level="TRACE">Return: None</msg>
+<arg>${PIN-5}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:10.649168" elapsed="5.178167"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:15.827335" level="TRACE">Arguments: [ '4' ]</msg>
+<msg time="2024-09-01T12:07:15.827335" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"4\")]"}</msg>
+<msg time="2024-09-01T12:07:16.234394" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:16.234394" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000b2","ELEMENT":"00000000-0000-0186-ffff-ffff000000b2"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-wllgT4pN1ye6bYxhS17y3QE47qg"', 'Date': 'Sun, 01 Sep 2024 05:07:16 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:16.234394" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:16.234394" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click {}</msg>
+<msg time="2024-09-01T12:07:16.784309" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:16.784309" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:16 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:16.784309" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:16.784309" level="INFO">xpath criteria: //*[contains(@text,"4")]</msg>
+<msg time="2024-09-01T12:07:16.784309" level="TRACE">Return: None</msg>
+<arg>${PIN-4}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:15.827335" elapsed="0.956974"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:16.784309" level="TRACE">Arguments: [ '3' ]</msg>
+<msg time="2024-09-01T12:07:16.784309" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"3\")]"}</msg>
+<msg time="2024-09-01T12:07:17.159793" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:17.159793" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000b0","ELEMENT":"00000000-0000-0186-ffff-ffff000000b0"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-VlxZw2jpnQlAycD1Fg9+auIpQD4"', 'Date': 'Sun, 01 Sep 2024 05:07:17 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:17.159793" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:17.159793" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b0/click {}</msg>
+<msg time="2024-09-01T12:07:17.222325" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b0/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:17.222325" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:17 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:17.222325" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:17.222325" level="INFO">xpath criteria: //*[contains(@text,"3")]</msg>
+<msg time="2024-09-01T12:07:17.222325" level="TRACE">Return: None</msg>
+<arg>${PIN-3}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:16.784309" elapsed="0.438016"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:17.222325" level="TRACE">Arguments: [ '2' ]</msg>
+<msg time="2024-09-01T12:07:17.222325" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"2\")]"}</msg>
+<msg time="2024-09-01T12:07:17.959806" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:17.959806" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000ae","ELEMENT":"00000000-0000-0186-ffff-ffff000000ae"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-/B85K+qnLvxTERb8C06+nNBykpA"', 'Date': 'Sun, 01 Sep 2024 05:07:17 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:17.959806" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:17.959806" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000ae/click {}</msg>
+<msg time="2024-09-01T12:07:18.022326" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000ae/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:18.022326" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:18 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:18.022326" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:18.022326" level="INFO">xpath criteria: //*[contains(@text,"2")]</msg>
+<msg time="2024-09-01T12:07:18.022326" level="TRACE">Return: None</msg>
+<arg>${PIN-2}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:17.222325" elapsed="0.800001"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:18.022326" level="TRACE">Arguments: [ '4' ]</msg>
+<msg time="2024-09-01T12:07:18.022326" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"4\")]"}</msg>
+<msg time="2024-09-01T12:07:18.852687" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:18.852687" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000b2","ELEMENT":"00000000-0000-0186-ffff-ffff000000b2"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-wllgT4pN1ye6bYxhS17y3QE47qg"', 'Date': 'Sun, 01 Sep 2024 05:07:18 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:18.852687" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:18.852687" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click {}</msg>
+<msg time="2024-09-01T12:07:18.915188" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:18.915188" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:18 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:18.915188" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:18.915188" level="INFO">xpath criteria: //*[contains(@text,"4")]</msg>
+<msg time="2024-09-01T12:07:18.915188" level="TRACE">Return: None</msg>
+<arg>${PIN-4}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:18.022326" elapsed="0.892862"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-09-01T12:07:18.915188" level="TRACE">Arguments: [ '4' ]</msg>
+<msg time="2024-09-01T12:07:18.915188" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements {"using": "xpath", "value": "//*[contains(@text,\"4\")]"}</msg>
+<msg time="2024-09-01T12:07:19.682763" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/elements HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:19.682763" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0186-ffff-ffff000000b2","ELEMENT":"00000000-0000-0186-ffff-ffff000000b2"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-wllgT4pN1ye6bYxhS17y3QE47qg"', 'Date': 'Sun, 01 Sep 2024 05:07:19 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:19.682763" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:19.692771" level="DEBUG">POST http://192.168.18.43:4723/session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click {}</msg>
+<msg time="2024-09-01T12:07:19.729524" level="DEBUG">http://192.168.18.43:4723 "POST /session/5c1dbd13-ba1f-45a0-a0cf-be8c1364ee3f/element/00000000-0000-0186-ffff-ffff000000b2/click HTTP/11" 200 0</msg>
+<msg time="2024-09-01T12:07:19.729524" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Sun, 01 Sep 2024 05:07:19 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-09-01T12:07:19.729524" level="DEBUG">Finished Request</msg>
+<msg time="2024-09-01T12:07:19.729524" level="INFO">xpath criteria: //*[contains(@text,"4")]</msg>
+<msg time="2024-09-01T12:07:19.729524" level="TRACE">Return: None</msg>
+<arg>${PIN-4}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-09-01T12:07:18.915188" elapsed="0.814336"/>
+</kw>
+<msg time="2024-09-01T12:07:19.729524" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-09-01T12:07:10.649168" elapsed="9.080356"/>
+</kw>
+<status status="PASS" start="2024-09-01T12:07:05.927338" elapsed="13.802186"/>
+</test>
+<status status="PASS" start="2024-09-01T12:06:59.276538" elapsed="20.468624"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="LoginWAOTP">LoginWAOTP</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
