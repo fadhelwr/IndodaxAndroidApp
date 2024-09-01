@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-01T14:43:08.263835" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginWAOTP" source="D:\QA\Automation\IndodaxAndroidApp\TestSuites\AccountActivation\LoginWAOTP.robot">
+<test id="s1-t1" name="User should be able to open Indodax Application" line="7">
+<kw name="Open Indodax Application">
+<msg time="2024-09-01T14:43:08.625111" level="FAIL">No keyword with name 'Open Indodax Application' found.</msg>
+<status status="FAIL" start="2024-09-01T14:43:08.625111" elapsed="0.000000">No keyword with name 'Open Indodax Application' found.</status>
+</kw>
+<status status="FAIL" start="2024-09-01T14:43:08.625111" elapsed="0.015653">No keyword with name 'Open Indodax Application' found.</status>
+</test>
+<test id="s1-t2" name="User could be access Login Page" line="9">
+<kw name="Login Application">
+<msg time="2024-09-01T14:43:08.642313" level="FAIL">No keyword with name 'Login Application' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-09-01T14:43:08.642313" elapsed="0.000000">No keyword with name 'Login Application' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-09-01T14:43:08.641287" elapsed="0.001026">No keyword with name 'Login Application' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t3" name="Perform Login Account" line="11">
+<kw name="Input Email User">
+<msg time="2024-09-01T14:43:08.642313" level="FAIL">No keyword with name 'Input Email User' found.</msg>
+<status status="FAIL" start="2024-09-01T14:43:08.642313" elapsed="0.000000">No keyword with name 'Input Email User' found.</status>
+</kw>
+<kw name="Input Password User">
+<status status="NOT RUN" start="2024-09-01T14:43:08.642313" elapsed="0.000000"/>
+</kw>
+<kw name="Input PIN">
+<status status="NOT RUN" start="2024-09-01T14:43:08.642313" elapsed="0.000000"/>
+</kw>
+<kw name="Verify OTP">
+<status status="NOT RUN" start="2024-09-01T14:43:08.642313" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-01T14:43:08.642313" elapsed="0.000000">No keyword with name 'Input Email User' found.</status>
+</test>
+<status status="FAIL" start="2024-09-01T14:43:08.295492" elapsed="0.346821"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="LoginWAOTP">LoginWAOTP</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-01T14:43:08.625111" level="ERROR">Error in file 'D:\QA\Automation\IndodaxAndroidApp\TestSuites\AccountActivation\LoginWAOTP.robot' on line 3: Resource file 'Generic\OpenApplication.robot' does not exist.</msg>
+<msg time="2024-09-01T14:43:08.625111" level="ERROR">Error in file 'D:\QA\Automation\IndodaxAndroidApp\TestSuites\AccountActivation\LoginWAOTP.robot' on line 4: Resource file '..\Resources\AAres\LoginRes.robot' does not exist.</msg>
+</errors>
+</robot>

@@ -1,6 +1,6 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../Resources/DeviceSetup.robot
+Resource    ../../Resources/DeviceSetup.robot
 
 *** Keywords ***
 Open Indodax Application
@@ -11,3 +11,5 @@ Open Indodax Application
     ...                 deviceName=${ANDROID_DEVICE_NAME}
     ...                 appActivity=${ANDROID_APP_ACTIVITY}
     ...                 automationName=${ANDROID_AUTOMATION_NAME}
+    ...                 noReset=true
+    Sleep    2S
