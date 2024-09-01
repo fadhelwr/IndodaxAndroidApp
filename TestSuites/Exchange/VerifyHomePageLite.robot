@@ -2,13 +2,12 @@
 Library     AppiumLibrary
 Resource    ../../Resources/AAres/LoginKeyword.robot
 Resource    ../Generic/OpenApplication.robot
+Resource    ../../Resources/EXres/HomepageKeyword.robot
 
 *** Test Cases ***
-User should be able to open Indodax Application
-    Open Indodax Application
-Direct to PIN App
-    Input PIN
-    
+Verify Home Page Lite
+    Verify <AppBar> LAYOUT LITE
+    Verify Bottom Sheet Estimated Asset Value
 
 
 

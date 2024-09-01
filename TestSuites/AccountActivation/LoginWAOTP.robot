@@ -1,6 +1,6 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../../Resources/AAres/LoginRes.robot
+Resource    ../../Resources/AAres/LoginKeyword.robot
 Resource    ../Generic/OpenApplication.robot
 
 *** Test Cases ***

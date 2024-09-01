@@ -1,7 +1,3 @@
-*** Settings ***
-Library     AppiumLibrary
-Resource    ../AAres/LoginRes.robot
-
 *** Variables ***
 #HOME PAGE APP BAR LAYOUT LITE
 ${BT-SWITCH-MODE-LITE}                       id.co.bitcoin.home_lite:id/ivSwitchLite
@@ -12,6 +8,7 @@ ${LABEL-EST-ASSET-LITE}                      id.co.bitcoin.home_lite:id/titleAss
 ${LABEL-EST-ASSET-TITLE-LITE-ENG}            Estimated Asset Value
 ${TOOLTIP-EST-ASSET-LITE}                    id.co.bitcoin.home_lite:id/ivAssetInfo
 ${EST-ASSET-NOMINAL-ICON-EYE-LITE}           id.co.bitcoin.home_lite:id/tvAsset
+${EST-ASSET-BOTTOMSHEET}                     android:id/content
 
 #HOME PAGE SWIPE REFRESH LITE: ANNOUNCEMENT
 ${ANNOUNCEMENT-LAYOUT-LITE}                  id.co.bitcoin.home_lite:id/vBgAnnouncement
@@ -60,7 +57,4 @@ ${BOTTOM-MENU-HOME-LITE}                     id.co.bitcoin.main_lite:id/menu_hom
 ${BOTTOM-MENU-MARKET-LITE}                   id.co.bitcoin.main_lite:id/menu_market
 ${BOTTOM-MENU-WALLET-LITE}                   id.co.bitcoin.main_lite:id/menu_wallet
 
-*** Keywords ***
-
-
-
+${SCREENSHOT_PATH}                           ../../Output/
