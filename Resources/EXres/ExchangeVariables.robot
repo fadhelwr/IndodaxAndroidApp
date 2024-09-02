@@ -40,17 +40,22 @@ ${INDODA-INFO-RECYCLEVIEW-LITE}              id.co.bitcoin.home_lite:id/rvNews
 ${INDODA-INFO-ROW-LITE}                      id.co.bitcoin.home_lite:id/clNews
 ${INDODA-INFO-ROW-1-LITE}                    (//android.view.ViewGroup[@resource-id="id.co.bitcoin.home_lite:id/clNews"])[1]
 
-#HOME PAGE SWIPE REFRESH LITE: NEWS CRYPTO
-${NEWS-SECTION-TITLE-LITE}                   id.co.bitcoin.home_lite:id/tvNewsSectionTitle
-${NEWS-SECTION-VIEWMORE-LITE}                id.co.bitcoin.home_lite:id/tvNewsShowAll
-${NEWS-SECTION-LIST-LITE}                    id.co.bitcoin.home_lite:id/fcvNews
-${NEWS-SECTION-ROW-1-LITE}                   //androidx.recyclerview.widget.RecyclerView[@resource-id="id.co.bitcoin:id/rvNews"]/android.view.ViewGroup[1]
-${NEWS-ROW-TITLE-LITE}                       id.co.bitcoin:id/tvTitle
-${NEWS-ROW-THUMBNAIL-LITE}                   id.co.bitcoin:id/ivCover
-${NEWS-ROW-TAG-LITE}                         id.co.bitcoin:id/llTag
-${NEWS-ROW-COIN-TAG-LITE}                    id.co.bitcoin:id/ivTagIcon
-${NEWS-ROW-SOURCE-TAG-LITE}                  id.co.bitcoin:id/tvSourceName
-${NEWS-ROW-TIMESTAMP-TAG-LITE}               id.co.bitcoin:id/tvCreatedAt
+#HOME PAGE SWIPE REFRESH: NEWS CRYPTO
+${NEWS-SECTION-TITLE}                        id.co.bitcoin.home_lite:id/tvNewsSectionTitle
+${NEWS-SECTION-VIEWMORE}                     id.co.bitcoin.home_lite:id/tvNewsShowAll
+${NEWS-SECTION-LIST}                         id.co.bitcoin.home_lite:id/fcvNews
+${NEWS-SECTION-ROW-1}                        //androidx.recyclerview.widget.RecyclerView[@resource-id="id.co.bitcoin:id/rvNews"]/android.view.ViewGroup[1]
+${NEWS-ROW-TITLE}                            id.co.bitcoin:id/tvTitle
+${NEWS-ROW-THUMBNAIL}                        id.co.bitcoin:id/ivCover
+${NEWS-ROW-TAG}                              id.co.bitcoin:id/llTag
+${NEWS-ROW-COIN-TAG}                         id.co.bitcoin:id/ivTagIcon
+${NEWS-ROW-SOURCE-TAG}                       id.co.bitcoin:id/tvSourceName
+${NEWS-ROW-TIMESTAMP-TAG}                    id.co.bitcoin:id/tvCreatedAt
+
+#NEWS PAGE
+${HEADER-NEWS-PAGE}                          id.co.bitcoin:id/tvToolbarTextAlign
+${BT-BACK-NEWS-PAGE}                         id.co.bitcoin:id/ivBackToolbarTextAlign
+${BT-FLOATING-BACKTOTOP}                     id.co.bitcoin:id/floatingUp
 
 #BOTTOM MENU LITE
 ${BOTTOM-MENU-HOME-LITE}                     id.co.bitcoin.main_lite:id/menu_home

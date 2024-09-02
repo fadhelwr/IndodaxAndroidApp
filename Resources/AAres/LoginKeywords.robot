@@ -10,27 +10,27 @@ Login Application
     Sleep    1s
 Input Email User
     Capture Page Screenshot
-    Input Text          ${LOGIN-EMAIL-FIELD}       ${ACCOUNT-EMAIL-1}
+    Input Text          ${LOGIN-EMAIL-FIELD}       ${ACCOUNT-EMAIL-2}
     Sleep    1s
 Input Password User
     Capture Page Screenshot
-    Input Password      ${LOGIN-PASSWORD-FIELD}    ${ACCOUNT-PASS-1}
+    Input Password      ${LOGIN-PASSWORD-FIELD}    ${ACCOUNT-PASS-2}
     Sleep    1s
     Click Element       ${LOGIN-BUTTON}
 #Change This
 Input PIN
     Capture Page Screenshot
-    Click Text    ${PIN-5}
+    Click Text    ${PIN-1}
     Sleep    1s
-    Click Text    ${PIN-4}
-    Sleep    1s
-    Click Text    ${PIN-3}
+    Click Text    ${PIN-1}
     Sleep    1s
     Click Text    ${PIN-2}
     Sleep    1s
-    Click Text    ${PIN-4}
+    Click Text    ${PIN-2}
     Sleep    1s
-    Click Text    ${PIN-4}
+    Click Text    ${PIN-3}
+    Sleep    1s
+    Click Text    ${PIN-3}
     Sleep    3s
 
 #OTP
