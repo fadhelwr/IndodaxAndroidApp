@@ -60,6 +60,5 @@ ${BT-FLOATING-BACKTOTOP}                     id.co.bitcoin:id/floatingUp
 #BOTTOM MENU LITE
 ${BOTTOM-MENU-HOME-LITE}                     id.co.bitcoin.main_lite:id/menu_home
 ${BOTTOM-MENU-MARKET-LITE}                   id.co.bitcoin.main_lite:id/menu_market
-${BOTTOM-MENU-WALLET-LITE}                   id.co.bitcoin.main_lite:id/menu_wallet
 
 ${SCREENSHOT_PATH}                           ../../Output/
