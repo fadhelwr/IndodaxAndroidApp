@@ -1,19 +1,15 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../../Resources/AAres/LoginKeyword.robot
-Resource    ../Generic/OpenApplication.robot
+Resource    LoginOTP.robot
 
-*** Test Cases ***
-User should be able to open Indodax Application
+*** Keywords ***
+Perform fresh login with OTP
     Open Indodax Application
-User could be access Login Page
     Login Application
-Perform Login Account
     Input Email User
     Input Password User
     Input PIN
     Verify OTP
-Verify Home Page
     Verify Pop up Trading Mode
     Verify App Tour: Home Page
     Verify Bottom Sheet Biometric: Skip

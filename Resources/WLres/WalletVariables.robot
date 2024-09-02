@@ -1,10 +1,10 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../AAres/LoginKeyword.robot
-Resource    ../WLres/WalletRes.robot
+Resource    ../AAres/LoginKeywords.robot
 
 *** Variables ***
 #WALLET PAGE
+
 
 *** Keywords ***
 

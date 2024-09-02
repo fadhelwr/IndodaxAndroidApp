@@ -1,12 +1,13 @@
 *** Settings ***
 Library          AppiumLibrary
-Library          Process
+Resource         ../../TestSuites/AccountActivation/Login/LoginPIN/LoginPIN_suites.robot
+Resource         ../../TestSuites/Exchange/Lite/Homepage/VerifyHomePageLite_suites.robot
 
 *** Test Cases ***
-Run Login Test Case
-    Run Process    robot    -d Output ../../TestSuites/AccountActivation/LoginGoogleAuth.robot --test
-Run Verify Home Page
-    Run Process    robot    -d Output ../../TestSuites/Exchange/VerifyHomepageLite.robot
+Testcase 1: Perform Login Account via PIN
+    Perform Login PIN
+Tescase 2: Verify Home Page Lite
+    Verify Home Page Lite
 
 
 

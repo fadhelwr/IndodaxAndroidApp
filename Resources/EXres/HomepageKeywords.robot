@@ -1,7 +1,7 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../AAres/LoginKeyword.robot
-Resource    ExchangeLocator.robot
+Resource    ../AAres/LoginKeywords.robot
+Resource    ExchangeVariables.robot
 
 *** Keywords ***
 Verify <AppBar> LAYOUT LITE

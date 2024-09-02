@@ -1,7 +1,7 @@
 *** Settings ***
 Library     AppiumLibrary
 Resource    AccountRes.robot
-Resource    LoginLocator.robot
+Resource    LoginVariables.robot
 
 *** Keywords ***
 Login Application
