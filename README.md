@@ -15,6 +15,7 @@ Learn more about Robot Framework [here](https://github.com/robotframework/robotf
 - [Appium v2.11.3](https://github.com/appium/appium/releases)
 - [Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2024.8.2) 
 - Openjdk 17.0.11 2024-04-16 LTS (get from `npm` or [here](https://jdk.java.net/archive/))
+- [Android Studio](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAjw59q2BhBOEiwAKc0ijcFGjUeUbRlsFOU1zWqt4IY12ml9r3ZqedllJl1KR_O5euR_YuMkiRoCCPAQAvD_BwE&gclsrc=aw.ds&hl=id) to get `sdk-tools` and `sdk-platform-tools`
 - [Node.js](https://nodejs.org/en)
 
 ## Usage
