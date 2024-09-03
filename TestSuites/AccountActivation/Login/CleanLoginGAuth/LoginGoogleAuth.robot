@@ -1,7 +1,7 @@
 *** Settings ***
 Library     AppiumLibrary
 Resource    ../../../../Resources/AAres/LoginKeywords.robot
-Resource    ../../../Generic/OpenApplication.robot
+Resource    ../../../../Resources//Helper/OpenApplication.robot
 
 *** Test Cases ***
 User should be able to open Indodax Application

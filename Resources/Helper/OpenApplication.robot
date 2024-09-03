@@ -1,6 +1,6 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../../Resources/DeviceSetup.robot
+Resource    DeviceSetup.robot
 
 *** Keywords ***
 Open Indodax Application
