@@ -1,3 +1,6 @@
+*** Settings ***
+Library     AppiumLibrary
+
 *** Variables ***
 ${ANDROID_AUTOMATION_NAME}    UIAutomator2
 ${ANDROID_PLATFORM_NAME}      Android
